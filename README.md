@@ -6,7 +6,7 @@
 
 This test automates the full login → checkout → logout flow on the [saucedemo.com](https://saucedemo.com) website.
 
-### 🔍 What It Covers:
+### What It Covers:
 1. Login using:
    - **Username**: `standard_user`
    - **Password**: `secret_sauce`
