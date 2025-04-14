@@ -1,0 +1,10 @@
+SQL Query:
+
+SELECT DISTINCT OrderID
+FROM Orders
+WHERE Quantity BETWEEN 5 AND 15;
+
+
+Explanation:
+BETWEEN 5 AND 15 checks for quantities inclusive of 5 and 15. DISTINCT ensures that if the same OrderID appears more than once in the result, it shows only once.
+
