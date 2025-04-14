@@ -1,0 +1,60 @@
+4. Bug Report
+
+Title: Login Button Not Visible on Mobile Devices
+
+Environment:
+
+- Browser: (e.g., Google Chrome, Firefox, Safari)
+
+- Operating System: (e.g., Android, iOS, Windows)
+
+- Device Type: Mobile (e.g., iPhone, Android Phone)
+
+- App Version: If it is available
+
+- URL: https://www.saucedemo.com/
+
+Severity: High (Affects core functionality)
+
+Priority: P1 (Critical – blocks users from logging in on mobile)
+
+Description: The 'Login' button is not visible when accessing the Swag Labs (saucedemo.com) site on mobile devices. This issue prevents users from logging in, making it critical for mobile users.
+
+Steps to Reproduce:
+
+1. Open a mobile browser (e.g., Safari or Chrome) on your device.
+
+2. Navigate to https://www.saucedemo.com/.
+
+3. Input a valid username in the "Username" field.
+
+4. Input a valid password in the "Password" field.
+
+5. Observe the login page layout.
+
+6. The 'Login' button will not be visible on the screen.
+
+Expected Result: The 'Login' button should be visible and accessible for users to click after entering the username and password fields on mobile devices.
+
+Actual Result: The 'Login' button is not visible on mobile devices, preventing users from logging in.
+
+Screenshots/Video: Here we should attach screenshots or screen recordings showing the issue if available
+
+Impact:
+
+- Users on mobile devices are unable to log in to their accounts, affecting user experience and business operations.
+
+- Mobile users are unable to access the site fully, leading to frustration and potential loss of users.
+
+Additional Information:
+
+- This issue only occurs on mobile devices; it works as expected on desktop devices.
+
+- Possible causes may include CSS styling issues, viewport or media query errors, or elements being hidden due to responsive design breakpoints.
+
+Steps for Fix/Next Steps:
+
+- Investigate the CSS for mobile breakpoints and ensure the 'Login' button is visible on smaller screens.
+
+- Check for any hidden elements or media query conditions that could affect the visibility of the button.
+
