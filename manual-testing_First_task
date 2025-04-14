@@ -1,0 +1,19 @@
+-Function Requirement
+
+Convert an integer `age` into a life period:
+
+- If `age == 0`: return `INVALID`
+- If `0 < age < 18`: return `CHILD`
+- If `age >= 18`: return `ADULT`
+
+- Boundary Test Cases
+
+| Test Case | Input | Expected Output | Reason |
+|-----------|--------|------------------|--------|
+| TC1       | -1     | INVALID or Error | Negative input (invalid age) |
+| TC2       | 0      | INVALID          | Lower boundary |
+| TC3       | 1      | CHILD            | Just above INVALID |
+| TC4       | 17     | CHILD            | Just below ADULT |
+| TC5       | 18     | ADULT            | Exact boundary for ADULT |
+| TC6       | 19     | ADULT            | Just above ADULT |
+| TC7       | 100    | ADULT            | Large value input |
