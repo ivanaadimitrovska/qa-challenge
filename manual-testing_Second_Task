@@ -1,0 +1,30 @@
+- Regression Testing Strategy
+
+- What is Regression Testing?
+
+Regression testing is a type of software testing performed to verify that recent code changes (like bug fixes, new features, or refactoring) 
+have not adversely affected the existing functionality of the application.
+
+Even a small bug fix can unintentionally affect other parts of the system. Regression testing ensures:
+- The bug is truly resolved
+- No new defects have been introduced
+- Core and related functionalities still work as expected
+
+- The most suitable approach for regression testing in this scenario is: Automated Regression Testing Using a Risk-Based Approach. Because of: efficiency (
+automated tests can quickly re-run a large suite of tests, ideal for detecting unintended side effects), risk-based prioritization (focuses first on testing
+areas most likely to be impacted by the change (e.g., modules connected to the bug fix), repeatability (can be easily re-run in future test cycles)
+and coverage (ensures both the bug fix and critical system features are validated.
+
+- Recommended Steps:
+
+1. Identify the modules affected by the bug fix.
+2. Select high-priority test cases related to those modules.
+3. Execute automated regression tests
+4. Run manual tests for areas not covered by automation or that need exploratory testing.
+5. Analyze results and report any issues found.
+
+-Tools:
+
+- Selenium, Playwright – for UI regression
+- PyTest, JUnit – for unit/integration regression
+- CI pipelines (GitHub Actions, Jenkins) – to trigger tests on each change
