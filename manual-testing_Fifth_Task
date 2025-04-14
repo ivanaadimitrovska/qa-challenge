@@ -1,0 +1,55 @@
+I would quickly triage the incoming customer requests based on severity, business impact, and feasibility before the release deadline:
+
+1. Critical Bug (High-Profile Customer)
+
+- This is the top priority. A core feature is broken, affecting business operations.
+
+- I would immediately escalate it to the development and QA teams.
+
+- If confirmed, this bug must be fixed and retested before the release.
+
+2. Intermittent Performance Issues (Enterprise Clients)
+
+- I would start parallel testing and monitoring to reproduce and collect logs.
+
+- If the issue can be consistently reproduced and is found to be critical, it may also require a fix before release.
+
+- If it's minor or edge-case, a workaround or patch in a hotfix release could be considered.
+
+3. Enhancement Request (Long-Standing Customer)
+
+- While valuable, this request is not a blocker.
+
+- I would document the request, acknowledge it to the customer, and plan it for the next sprint or patch release.
+
+- This helps manage customer expectations while staying on track.
+
+Afther that, I would call for an emergency stand-up with:
+
+-Product Manager
+
+- Lead Developer
+
+-QA Lead 
+
+- Support/Customer Success
+
+Together, we would:
+
+- Align on the priority order
+
+- Estimate the effort and impact of each request
+
+- Make go/no-go decisions collaboratively
+
+After that:  For the critical bug fix, I’d run targeted regression testing focused on the affected areas. For the performance issues, 
+I’d coordinate with DevOps or Performance QA to monitor logs and performance benchmarks. Meanwhile, I'd ensure that the original 
+regression and test plans stay on track, possibly by reassigning team members or parallelizing tasks.
+
+Also I will provide transparent updates to internal teams and customer-facing roles about what is being fixed now and what is being deferred. 
+Update the test execution plan and bug tracker accordingly. Keep all communication documented and time-stamped.
+
+Even under pressure, I would not sacrifice testing depth for speed. Every change merged before the release would go through: Smoke Testing, Regression Testing,
+Sanity Checks in staging. If any high-risk changes cannot be confidently tested in time, I would recommend postponing the release slightly or delivering 
+a hotfix shortly after.
+
